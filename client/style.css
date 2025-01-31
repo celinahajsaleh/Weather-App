@@ -1,0 +1,130 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Aboreto", serif;
+  color: #381f34;
+  text-shadow: 0px 0px 5px  #fdccf627,0px 0px 15px  #fdccf627;
+}
+
+body {
+    background: url('bg.gif') no-repeat center center fixed;
+    background-size: cover;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+  font-size: 5.3rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#bg {
+  background: rgba(206, 153, 202, 0.157);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px #fdccf636;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input::placeholder,textarea::placeholder {
+    color: #381f34;
+    text-shadow: 0px 0px 5px  #fdccf6a3,0px 0px 15px  #fdccf6e0;
+    text-align: center;
+}
+
+input,textarea {
+  width: 93%;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fdccf627;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(193, 27, 168, 0.265);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus,textarea:focus {
+  background: #fdccf697;
+  box-shadow: 0 0 10px #fdccf697;
+}
+
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.btn-primary {
+  width: 40%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(193, 27, 168, 0.265);
+  text-align: center;
+  background-color: #fdccf697;
+  border-color: #fdccf697;
+}
+
+.btn-primary:hover {
+  background-color: #fdccf6;
+  border-color: #fdccf6;
+}
+
+.btn-primary:active {
+  background-color: #ee82de !important;
+  border-color: #ee82de !important;
+}
+
+#result {
+  width: 100%;
+  margin-top: 18px;
+  padding: 20px;
+  background: #fdccf697;
+  box-shadow: 0 4px 8px rgba(193, 27, 168, 0.265);
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+#date,#temp,#content{
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  h1 {
+    font-size: 2rem;}
+
+  input,textarea {
+    font-size: 0.9rem;
+  }
+
+  #date,#temp,#content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  input,textarea {
+    font-size: 0.8rem;
+  }
+
+  #date,#temp,#content {
+    font-size: 0.9rem;
+  }
+}
